@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#39444b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ee4a50</color>
+    <!--<color name="colorAccent">#6ec6e9</color>-->
+    <color name="colorBGButton">#3d6889</color>
+    <color name="colorButtonText">#6ec6e9</color>
+    <color name="colorSubItem">#b4bfc6</color>
+    <color name="colorDelete">#E5685A</color>
+
+
+    <color name="colorGreenNotification">#7ae351</color>
+    <color name="colorRedNotification">#ee4a50</color>
+    <color name="colorWhite">#FFF</color>
+</resources>
