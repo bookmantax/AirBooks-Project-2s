@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:weightSum="5"
+
+        android:gravity="center"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:weightSum="5"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="London Trip"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTitle" />
+
+                <TextView
+                    android:text="2/08/2016-5/08/2016"
+                    android:textSize="10sp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorSubItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDate" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="$650"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+
+            android:textColor="@color/colorButtonText"
+            android:id="@+id/tvAmount"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

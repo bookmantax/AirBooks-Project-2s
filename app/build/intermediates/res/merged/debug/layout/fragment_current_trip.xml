@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:background="@drawable/border_bottom"
+        >
+
+
+        <TextView
+                android:text="A Work Trip is in Progress"
+                android:textSize="18sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorWhite"
+                android:layout_width="fill_parent"
+                android:padding="0dp"
+                android:layout_height="50dp"
+                android:background="@color/colorGreenNotification"
+                android:id="@+id/textView4" />
+
+        <Switch
+            android:text="Work Trip"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:checked="true"
+            android:id="@+id/swWorkTrip" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:gravity="center"
+
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center"
+            android:background="@drawable/border_bottom_dark"
+            >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:text="Start Date"
+            android:textColor="@color/colorButtonText"
+            android:gravity="center_vertical|right"
+            android:textSize="18sp"
+            android:ems="10"
+            android:id="@+id/tvLabelDate"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:text="@string/current_trip_date_sample"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:ems="10"
+            android:textColor="@color/colorGreenNotification"
+            android:id="@+id/tvDate"
+        />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:background="@drawable/border_bottom_dark"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:text="Per Diem Rate"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorButtonText"
+                android:textSize="18sp"
+                android:ems="10"
+                android:id="@+id/tvLabelPerDiem"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:textSize="18sp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/per_diem_value"
+                android:textColor="@color/colorGreenNotification"
+                android:id="@+id/tvPerDiem"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:background="@drawable/border_top"
+        android:layout_weight="1">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Trip"
+            android:drawableLeft="@drawable/add"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/colorButtonText"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnStartTrip" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Trip"
+            android:drawableLeft="@drawable/delete"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:textColor="@color/colorButtonText"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnEndTrip" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

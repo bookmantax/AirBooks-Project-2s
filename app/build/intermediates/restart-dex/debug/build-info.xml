@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi,armeabi-v7a"
+    api-level="23"
+    format="8"
+    timestamp="51329614045782"
+    token="-5676223162888681214"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1416" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="462" />
+    <task
+        name="verifier"
+        duration="212" />
+
+    <artifact
+        location="G:\Work\Current\Randy\New Version\AirBooks\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="51329614045782"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="G:\Work\Current\Randy\New Version\AirBooks\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,7 @@
+#Sun Aug 07 14:51:00 PKT 2016
+base.0=G\:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_923071636dc0623c310e5ed1802e20c82acb4930
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=G\:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_127a50d302e05f8a8097ba2c865a41f07fca5532\\classes.dex
+base.1=G\:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_127a50d302e05f8a8097ba2c865a41f07fca5532
+file.0=G\:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_923071636dc0623c310e5ed1802e20c82acb4930\\classes.dex
