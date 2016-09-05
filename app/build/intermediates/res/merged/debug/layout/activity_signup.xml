@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
+            android:maxLength="12"
             android:id="@+id/etPhone"
             android:hint="PHONE #" />
 
@@ -57,11 +58,14 @@
         android:layout_weight="3">
 
         <Button
-            android:text="Save"
-            android:layout_width="250dp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorBGButton"
+            android:text="Register"
+            android:drawableLeft="@drawable/register"
+            android:padding="10dp"
             android:textColor="@color/colorButtonText"
+            android:background="@color/colorPrimary"
             android:id="@+id/btnSave" />
     </LinearLayout>
 </LinearLayout>

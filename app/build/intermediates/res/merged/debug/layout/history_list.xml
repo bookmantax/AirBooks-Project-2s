@@ -41,6 +41,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tvDate" />
+                <TextView
+
+                    android:textSize="10sp"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone"
+                    android:textColor="@color/colorSubItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemID" />
             </LinearLayout>
         </LinearLayout>
         <TextView

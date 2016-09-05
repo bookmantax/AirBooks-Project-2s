@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.logixcess.airbooks">
+    package="com.bookmantax.airbooks">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBh0tBzy0ZOEfn9-ALFl-6zs5ThLVdhHz4"></meta-data>
         <activity
             android:name=".AC_Splash"
             android:theme="@style/AppTheme.NoActionBar">
@@ -19,8 +27,23 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AC_Signup"></activity>
+            android:windowSoftInputMode="adjustPan"
+        android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="AC_Signup"></activity>
+
+        <service android:name="com.bookmantax.airbooks.Business.AutomationFunctions"
+            android:exported="false">
+
+        </service>
+        <receiver android:name="com.bookmantax.airbooks.Business.TaskScheduler"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="84e080b0c2cfe9c187fa30ed6ec56ba17c6dc8d9" />
     </application>
 
 </manifest>

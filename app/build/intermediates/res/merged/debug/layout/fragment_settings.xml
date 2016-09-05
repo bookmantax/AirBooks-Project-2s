@@ -2,5 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_weight="3">
 
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etAirCode"
+            android:hint="AIRPORT CODE" />
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:maxLength="12"
+            android:id="@+id/etPhone"
+            android:hint="PHONE #" />
+
+
+
+        <Switch
+            android:text="Mute Notifications"
+            android:padding="10dp"
+            android:textColor="@color/colorDelete"
+            android:layout_width="300dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/swNoti" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="3">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+
+            android:drawableLeft="@drawable/settings"
+            android:padding="10dp"
+
+            android:textColor="@color/colorButtonText"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnSave" />
+    </LinearLayout>
 </LinearLayout>

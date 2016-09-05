@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "G:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "G:\\Work\\Current\\Randy\\Online Version\\AirBooks-Project-2s\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "G:\\Work\\Current\\Randy\\New Version\\AirBooks\\app\\build\\intermediates\\exploded-aar\\com.android.support.test\\rules\\0.5\\res\\values\\values.xml",
+                    "file": "G:\\Work\\Current\\Randy\\Online Version\\AirBooks-Project-2s\\app\\build\\intermediates\\exploded-aar\\com.android.support.test\\rules\\0.5\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

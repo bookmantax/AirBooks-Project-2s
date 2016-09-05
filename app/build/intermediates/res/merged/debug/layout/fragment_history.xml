@@ -1,10 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:background="@drawable/border_bottom"
+            android:gravity="center_horizontal"
+            android:id="@+id/layout_edit_trip"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_bottom"
+                    >
+                        <Switch
+                            android:text="Current Trip"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/swActiveTrip" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/location"
+
+                                    android:id="@+id/imageView2"
+
+                                    android:scaleType="center" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:hint="City"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:id="@+id/etCity"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/start_date"
+                                    android:id="@+id/imageView1"
+
+                                    android:scaleType="center" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:hint="Start Date"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:ems="10"
+                                    android:id="@+id/etStartDate"
+                                    />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:id= "@+id/layout_end_date"
+                            android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/end_date"
+                                    android:id="@+id/imageView3"
+
+                                    android:scaleType="center" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:hint="End Date"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:ems="10"
+                                    android:id="@+id/etEndDate"
+                                    />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/money"
+                                    android:id="@+id/imageView4"
+                                    android:scaleType="center" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:hint="Per Diem"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="date"
+                                    android:ems="10"
+                                    android:id="@+id/etPerDiem"
+                                    />
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:weightSum="2"
+
+                    android:layout_weight="1">
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update Trip"
+                            android:drawableLeft="@drawable/add"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp"
+                            android:textColor="@color/colorButtonText"
+                            android:background="@color/colorPrimary"
+                            android:id="@+id/btnUpdateTrip"
+                            />
+
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
         <ListView
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/history_item"/>
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/history_item"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nothing"
+            android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:text="Nothing to show!"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_weight="1" />
+        </LinearLayout>
+
 </LinearLayout>

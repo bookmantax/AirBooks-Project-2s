@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
     android:weightSum="10">
 
     <LinearLayout
@@ -10,84 +11,108 @@
         android:layout_height="0dp"
         android:layout_weight="6"
         android:layout_marginTop="10dp"
-        android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            >
+        >
 
-            <TextView
-                android:text="City : "
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/tvCity"
-                 />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@drawable/border_bottom"-->
+            <!--&gt;-->
 
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/spinner"
-                 />
-        </LinearLayout>
+            <!--<TextView-->
+                <!--android:text="City : "-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/tvCity"-->
+                 <!--/>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            <!--<Spinner-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/spinner"-->
+                 <!--/>-->
+        <!--</LinearLayout>-->
 
-            <TextView
-                android:text="Days : "
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:id="@+id/textView"
-                 />
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/border_bottom"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="numberSigned"
-                android:ems="10"
-                android:id="@+id/editText"
-                 />
+            <!--<TextView-->
+                <!--android:text="Days : "-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
 
-        </LinearLayout>
+                <!--android:id="@+id/textView"-->
+                 <!--/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:inputType="numberSigned"-->
+                <!--android:ems="10"-->
+                <!--android:id="@+id/editText"-->
+                 <!--/>-->
+
+        <!--</LinearLayout>-->
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:gravity="center_vertical|center_horizontal"
-            android:layout_height="match_parent">
+            android:gravity="center_horizontal"
 
+            android:layout_height="300dp">
+            <TextView
+                android:text="Per Diem Allowance To Date"
+                android:gravity="top|center_horizontal"
+                android:textSize="25sp"
+                android:textColor="@color/colorGreenNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading" />
             <TextView
                 android:text="$0.0"
-                android:gravity="center_vertical|center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="100dp"
                 android:textSize="30sp"
                 android:textColor="@color/colorButtonText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2" />
+                android:id="@+id/tvPerDiemTotal" />
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:gravity="center_horizontal|center_vertical"
-        android:layout_height="0dp"
-        android:layout_weight="4">
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="0dp"-->
 
-        <Button
-            android:text="Calculate"
-            android:background="@color/colorBGButton"
-            android:textColor="@color/colorButtonText"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2" />
-    </LinearLayout>
+        <!--android:layout_weight="4">-->
+
+        <!--<Button-->
+            <!--style="?android:attr/buttonStyleSmall"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Calculate"-->
+            <!--android:drawableLeft="@drawable/tax"-->
+            <!--android:padding="10dp"-->
+            <!--android:visibility="visible"-->
+            <!--android:textColor="@color/colorButtonText"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:id="@+id/btnCalculate" />-->
+
+    <!--</LinearLayout>-->
 </LinearLayout>

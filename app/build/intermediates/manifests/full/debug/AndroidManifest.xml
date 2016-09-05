@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.logixcess.airbooks"
+    package="com.bookmantax.airbooks"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="17"
         android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Include required permissions for Google Maps API to run. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +28,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBh0tBzy0ZOEfn9-ALFl-6zs5ThLVdhHz4" />
+
         <activity
-            android:name="com.logixcess.airbooks.AC_Splash"
+            android:name="com.bookmantax.airbooks.AC_Splash"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +42,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.logixcess.airbooks.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.logixcess.airbooks.AC_Signup" />
+            android:name="com.bookmantax.airbooks.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.bookmantax.airbooks.AC_Signup" />
+
+        <service
+            android:name="com.bookmantax.airbooks.Business.AutomationFunctions"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="com.bookmantax.airbooks.Business.TaskScheduler" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="84e080b0c2cfe9c187fa30ed6ec56ba17c6dc8d9" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
