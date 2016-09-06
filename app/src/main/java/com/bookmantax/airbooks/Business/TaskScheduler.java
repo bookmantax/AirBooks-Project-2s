@@ -97,12 +97,12 @@ public class TaskScheduler extends BroadcastReceiver {
             PendingIntent pi = PendingIntent.getBroadcast(context, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
             PendingIntent piMorning = PendingIntent.getBroadcast(context, 0, imorning, PendingIntent.FLAG_UPDATE_CURRENT);
             Calendar c = Calendar.getInstance();
-            c.set(Calendar.HOUR_OF_DAY,11);
-            c.set(Calendar.MINUTE,34);
+            c.set(Calendar.HOUR_OF_DAY,23);
+            c.set(Calendar.MINUTE,55);
             c.set(Calendar.SECOND,00);
             Calendar c2 = Calendar.getInstance();
-            c2.set(Calendar.HOUR_OF_DAY,10);
-            c2.set(Calendar.MINUTE,57);
+            c2.set(Calendar.HOUR_OF_DAY,9);
+            c2.set(Calendar.MINUTE,00);
             c2.set(Calendar.SECOND,00);
             am.cancel(pi);
             am.cancel(piMorning);
